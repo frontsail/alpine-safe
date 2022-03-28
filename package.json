@@ -1,0 +1,29 @@
+{
+  "name": "@frontsail/alpine-safe",
+  "version": "1.0.0",
+  "author": "Muris Ceman <muris@frontsail.com>",
+  "license": "MIT",
+  "homepage": "https://www.frontsail.com/docs/alpine-safe",
+  "description": "An Alpine plugin for filtering user input to prevent XSS attacks.",
+  "main": "dist/alpine-safe.cjs.js",
+  "module": "dist/alpine-safe.esm.js",
+  "type": "module",
+  "scripts": {
+    "format": "prettier --write .",
+    "build": "node ./build.js",
+    "dev": "node ./build.js --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frontsail/alpine-safe.git"
+  },
+  "bugs": {
+    "url": "https://github.com/frontsail/alpine-safe/issues"
+  },
+  "devDependencies": {
+    "@frontsail/build": "^1.0.0"
+  },
+  "dependencies": {
+    "xss": "^1.0.11"
+  }
+}
